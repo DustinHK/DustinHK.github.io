@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #283149;
+    background-SiZe: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 15%;
+    padding: 2rem 5%;
+    background:rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: 100;
+    
+}
+
+.logo {
+    margin-left: -10pt; 
+    margin-right: auto;
+    margin-top: -8pt;
+
+
+    
+
+}
+
+.namalogo{
+    position: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    margin-left: -220pt; 
+    margin-right: auto;
+    margin-top: 2pt; 
+}
+.namalogo1{
+    position: center;
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300; 
+    margin-left: -280pt;
+    margin-right: auto;
+    margin-top: 28pt; 
+}
+
+.navbar a {
+    font-size: 1.30rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    margin-right: auto;
+    margin-top: 2222rem;
+    margin-bottom: 25rem;
+   
+}
+
+.input-search{
+    width: 20%;
+    border: none;
+    border-radius:0 0 0 20px;
+    padding: 2px;
+}
+.input-submit{
+    margin-left: -5px;
+    border: none;
+    border-radius:0 20px 0 0;
+    padding: 2px;
+    background-color: white;
+    color: rgb(19, 19, 77);
+    width: 6%;
+}
+
+.container{
+    padding: 10rem;
+
+
+}
+
+.slide-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x:auto ;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 100  ;
+}
+
+.popular {
+    position: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 900; 
+    margin-left: 250pt;
+    margin-right: auto;
+    margin-top: 2pt; 
+    margin-bottom: 20pt;
+}
+
+.populer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title-p{
+    margin-left: 60px;
+    position: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 800; 
+    margin-left: 50pt; 
+    margin-right: auto;
+    margin-top: 2pt; 
+    margin-bottom: 20pt;
+
+}
+
+.populer img
+{
+    border-radius: 10px;
+}
+
+.gi
+{
+    position: center;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: 2pt; 
+    margin-bottom: 20pt;
+}
+.about {
+    width: 100%;
+}
+.about h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 200px;
+}
+
+.about h1::after {
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 0px 40px;
+    margin: 60px auto;
+}
+
+.content .boutton {
+    margin-top: 40px;
+    
+
+}
+.content .button a{
+    color: #fff;
+    background-color: rgb(76, 76, 148);
+    border: 1px solid rgb(76, 76, 148);
+    padding: 5px 25px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
+    
+
+}
+
+.button{
+    margin-left: 0pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: 20pt; 
+    margin-bottom: 20pt;
+}
+
+.content {
+    width: 100%;
+    color: white;
+    padding: 0px -1000px;
+
+}
+
+.kontak h1 {
+    text-align: left ;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 300px;
+    margin-left: 50pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 20pt;
+}
+
+.kontak h1::after {
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-left: 5pt;
+}
+
+.logo1{
+    margin-top: 50px;
+    margin-left: 50pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 20pt; 
+    
+}
+  
+.konlogo{
+    position: center;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    margin-left: 130pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: -95pt; 
+   ;
+}
+.konlogo1{
+    letter-spacing: 1.5px;  
+    position: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300; 
+    margin-left: 130pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: -10pt; 
+}
+  
+.contentop {
+    width: 100%;
+    font-size: 0.75rem;
+    color: white;
+    padding: 0px -1000px;
+    margin-left: 10pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: 50pt; 
+    font-style: italic;
+    margin-bottom: 50pt;
+
+}
+
+.kontak h2 {
+    text-align: center ;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: -250px;
+    margin-left: 50pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 100pt;
+}
+
+.tlp img{
+    margin-top: -50px;
+    margin-left: -35pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 20pt;
+    width: 40px;
+  
+}
+
+.email img{
+
+  
+    margin-top: -250px;
+    margin-left: 450pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 70pt;
+    width: 40px;
+}
+
+.email1{
+    position: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400; 
+    margin-left: 490pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: -100pt; 
+   
+}
+.tlp1{
+    letter-spacing: 1.5px;  
+    position: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400; 
+    margin-left: 490pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-top: 30pt; 
+}
+
+.followus h4 {
+    text-align: center ;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: -165px;
+    margin-left: 650pt; /* Mendorong gambar ke tengah secara horizontal */
+    /* margin-right: auto; */
+    /* margin-bottom: 400pt; */
+}
+
+.ig img{
+    margin-top: -100px;
+    margin-left: 740pt; /* Mendorong gambar ke tengah secara horizontal */
+
+    margin-bottom: 220pt;
+    width: 40px;
+  
+}
+
+.fb img{
+
+  
+    margin-top: 10px;
+    margin-left: 70pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 220pt;
+    width: 40px;
+}
+
+.twt img{
+
+  
+    margin-top: -340px;
+    margin-left: 790pt; /* Mendorong gambar ke tengah secara horizontal */
+    margin-right: auto;
+    margin-bottom: 270pt;
+    width: 40px;
+}
+
+@media screen and (max-width:800px ){
+    .navbar a {
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 0.5rem;
+        margin-right: auto;
+        
+       
+    }
+    .slider{
+        display: none;
+    }
+    .popular {
+        display: none;
+    }
+    .title-p{
+        margin-left: 30px;
+    }
+    .populer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .gi img{
+        width: 80%;
+    }
+    .kontak h2{
+        text-align: center ;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: -20px;
+        margin-left: -50pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 00pt;
+    }
+
+    .tlp img{
+        margin-top: -50px;
+        margin-left: -35pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: -20pt;
+        width: 40px;
+    }
+
+    .email img{
+        margin-top:10px;
+        margin-left: 40pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 20pt;
+        width: 40px;
+    }
+
+    .email1{
+        position: center;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 400; 
+        margin-left: 80pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-top: -50pt; 
+    }
+    .tlp1{
+        position: center;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 400; 
+        margin-left: 80pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-top: 20pt;    
+    }
+
+    .followus h4{
+        text-align: center ;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 70px;
+        margin-left: -50pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 00pt;
+    }
+    .ig img{
+        margin-top: 30px;
+        margin-left: 60pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 270pt;
+        width: 40px;  
+    }
+    .twt img{
+        margin-top: -407px;
+        margin-left: 120pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 300pt;
+        width: 40px;  
+    }
+    .fb img{
+        margin-top: -340px;
+        margin-left: 90pt; /* Mendorong gambar ke tengah secara horizontal */
+        margin-right: auto;
+        margin-bottom: 270pt;
+        width: 40px;  
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 15%;
+        padding: 2rem 5%;
+        background:rgba(0,0,0,.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: 100;
+    
+        
+    }
+    .namalogo {
+        display: none;
+
+    }
+    .namalogo1{
+        display: none;
+    }
+   .logo{
+    display: none;
+   }
+   .input-search{
+    width: 30%;
+    border: none;
+    border-radius:0 0 0 20px;
+    padding: 2px;
+    font-display: none;
+}
+.input-submit{
+    margin-left: -6px;
+    border: none;
+    border-radius:0 20px 0 0;
+    padding: 2px;
+    background-color: white;
+    color: rgb(19, 19, 77);
+    width: 6%;
+    font-size: 0px;
+}
+}
+
