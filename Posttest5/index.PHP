@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHK GAMING STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/gg/logo1.png">
+    <script text="text/javascript" src="test.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/gg/logo1.png" alt="logo" width="70" height="65"></a>
+        <input type="search" class="input-search"> 
+        <button type="submit" class="input-submit">search</button>
+        <nav class="navbar">
+           
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#populer">Top Up</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <img src="img/dark theme icon/moon.png" id="icon">
+    </header>
+    <section  id="home"class="container">
+        <h1 class="popular">MOST POPULAR GAMES</h1>
+        <div class="slider-wrapper">
+            <div class="slider">
+                
+                <img id="slide-1" src="img/slidegem/GI.webp" alt="gambarslide">
+                <img id="slide-2" src="img/slidegem/hsr1.webp" alt="gambarslide">
+                <img id="slide-3" src="img/slidegem/VALO.jpg" alt="gambarslide">
+                <img id="slide-4" src="img/slidegem/ML.jpg" alt="gambarslide">
+                <img id="slide-5" src="img/slidegem/FF.jpeg" alt="gambarslide">
+                <img id="slide-6" src="img/slidegem/APEX.jpg" alt="gambarslide">
+            </div>
+            
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+            </div>
+           <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+           <a class="next" onclick="nextslide(1)">&#10095;</a>
+        </div>
+       
+        <script>
+           
+let currentSlide = 1;
+
+
+function showSlide(n) {
+    const slides = document.querySelectorAll(".slider img");
+    const dots = document.querySelectorAll(".slider-nav a");
+
+    if (n > slides.length) {
+        currentSlide = 1;
+    }
+    if (n < 1) {
+        currentSlide = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    slides[currentSlide - 1].style.display = "block";
+    dots[currentSlide - 1].classList.add("active");
+}
+
+
+function nextslide(n) {
+    showSlide(currentSlide += n);
+}
+
+
+function currentSlideDot(n) {
+    showSlide(currentSlide = n);
+}
+
+
+showSlide(currentSlide);
+
+document.querySelector(".prev").addEventListener("click", function () {
+    nextslide(-1);
+});
+
+document.querySelector(".next").addEventListener("click", function () {
+    nextslide(1);
+});
+
+
+const dots = document.querySelectorAll(".slider-nav a");
+dots.forEach(function (dot) {
+    dot.addEventListener("click", function () {
+        const slideIndex = parseInt(dot.getAttribute("data-slide-index"));
+        currentSlideDot(slideIndex);
+    });
+});
+
+        </script>
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("light-theme");
+            }
+        </script>
+    </section>
+    <h1 class="title-p">POPULER</h1>
+    <section id="populer" class="populer">
+        <div class="gi">
+            <a href="topup.php">
+            <img  src="img/icongem/GenshinImpact.jpg" alt="gensin" >
+            <div class="judul-produk">Genshin Impact</div>
+            </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/valorant.jpg" alt="valo">
+            <div class="judul-produk">Valorant</div>
+            </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/mlbb.jpg" alt="ml">
+            <div class="judul-produk">Mobile Legend</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/pubgm.jpg" alt="gensin">
+            <div class="judul-produk">PUBG</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/ff.png" alt="gensin">
+            <div class="judul-produk">Free Fire</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/apex.jpeg" alt="gensin">
+            <div class="judul-produk">APEX LEGENDS</div>
+            </a>
+        </div>
+        </div>
+        </section>
+
+
+        <h1 class="title-p">TOP UP</h1>
+        <section id="populer" class="populer">
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/HSR.jpg" alt="gensin">
+            <div class="judul-produk">Honkai Star Rail</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/NIKE.jpg" alt="gensin">
+            <div class="judul-produk">NIKKE</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/HI3.jpg" alt="gensin">
+            <div class="judul-produk">Honkai Impact 3</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/COD.jpg" alt="gensin">
+            <div class="judul-produk">Call Of Duty</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/ARSIP.jpg" alt="gensin">
+            <div class="judul-produk">Blue Archive</div>
+        </a>
+        </div>
+        <div class="gi">
+            <a href="topup.php">
+            <img src="img/icongem/coc.png" alt="gensin">
+            <div class="judul-produk">Clash Of Clans</div>
+        </a>
+    </section>
+    
+    <section id="about">
+        <div class="about">
+            <h1>About</h1>
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Mahasiswa Infromatika</h3>
+                    <p >Saya selalu bersemangat untuk belajar dan berkembang, baik dalam kehidupan pribadi maupun profesional. Saya percaya bahwa setiap pengalaman adalah peluang untuk pertumbuhan, dan saya berharap dapat terus menghadapi tantangan dan mencapai lebih banyak pencapaian di masa depan.</p>
+                    <img src="img/gg/3x4.jpeg"  alt="foto">
+                    <ul class="a1">
+                        <li><strong>Nama:</strong> <span>Dustin Hessel Kopalit</li>
+                        <li><strong>NIM:</strong> <span>2209106045</li>
+                        <li><strong>Kelas:</strong> <span>A 2022</li>
+                        <li><strong>Kota:</strong> <span>Samarinda, Kalimantan Timur</li>
+                      </ul>
+                      <ul class="a2">
+                        <li><strong>umur:</strong> <span>19</li>
+                        <li><strong>Tempat Lahir:</strong> <span>Sengata</li>
+                        <li><strong>Tanggal Lahir:</strong> <span>25 November 2004</li>
+                        <li><strong>email:</strong> <span>dustinkopalit9@gmail.com</li>
+                      </ul>
+                    <div class="button">
+                            <a id="readMoreButton" href="#">Read More</a>
+                            <p id="moreText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas quia deleniti autem beatae adipisci consequatur dolorum corrupti illum architecto. Error commodi voluptate id animi molestiae quibusdam veniam ratione. Non.</p>
+                            </div>
+                <script>
+
+const moreText = document.getElementById("moreText");
+const readMoreButton = document.getElementById("readMoreButton");
+
+
+let isMoreTextVisible = false;
+
+
+readMoreButton.addEventListener("click", function(event) {
+ 
+    event.preventDefault();
+
+   
+    if (!isMoreTextVisible) {
+
+        moreText.style.display = "block";
+        readMoreButton.textContent = "Read Less"; 
+    } else {
+       
+        moreText.style.display = "none";
+        readMoreButton.textContent = "Read More"; 
+    }
+
+    
+    isMoreTextVisible = !isMoreTextVisible;
+});
+
+                </script>
+                            
+            </div>
+    
+        </div>
+    </section>
+</body>
+<footer>
+    <section id="contact">
+        <div class="kontak">
+            <h1>Contact</h1>
+            <div class="logo1">
+                <img src="img/gg/logo1.png" alt="" width= "150" height="150">
+                <div>
+                <p class="konlogo">D H K</p>
+                <p class="konlogo1">GAMING STORE</p>
+                <div class="contentop">
+                    <h3>Top Up Game Online Termurah dan Terpercaya </h3>
+                    
+                </div>
+                <h2>Contact Us</h2>
+                <div class="Contactus">
+                    <a href="#" class="email"><img src="img/iconkon/email.png" alt="email"></a>
+                    <a href="#" class="tlp"><img src="img/iconkon/tlp.png" alt="tlp"></a>
+                    <p class="email1">dustinkopalit9@gmail.com</p>
+                    <p class="tlp1">085386440709</p>
+                </div>
+                <section >
+                <div class="followus">
+                    <h4>Follow Us</h4>
+                </div>
+                <div class="Follow">
+                    <a href="#" class="ig"><img src="img/iconkon/instagram.png" alt="email"></a>
+                    <a href="#" class="fb"><img src="img/iconkon/facebook.png" alt="tlp"></a>
+                    <a href="#" class="twt"><img src="img/iconkon/twitter.png" alt="tlp"></a>
+                </div>
+            </section>
+            </div>
+    
+        </div>
+    </section>
+</footer>
+</html>
